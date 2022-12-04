@@ -22,7 +22,7 @@ export class PollsListComponent implements OnInit {
 
   private sub = new Subscription();
 
-  constructor(
+  public constructor(
     private _pollsService: PollsService
   ) {}
 

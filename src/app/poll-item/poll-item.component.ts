@@ -1,8 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ChartConfiguration } from 'chart.js';
 import { IQuestion, IQuestionData } from '../models/poll.interface';
-  import * as Chart from 'chart.js'
-  import {Color} from 'chart.js'
+ 
 import { randomColors } from '../utils/colors';
 
 @Component({
@@ -21,6 +20,7 @@ export class PollItemComponent implements OnInit {
        
   public backgroundColor = randomColors(20);
   public list: IQuestionData[] = [];
+  
 
   public ngOnInit(): void {
     if (this.question) {
