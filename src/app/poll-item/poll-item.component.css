@@ -1,0 +1,43 @@
+
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+}
+
+.card-header {
+    border: 1px solid rgb(212, 212, 212);
+    width: 100%;
+    height: 50px;
+    padding: 0px;
+    align-items: center;
+}
+
+.card-header-title {
+    margin: 26px;
+}
+
+mat-card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;        
+}
+
+.bar-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.bar {
+    border: 2px solid red;
+    width: 300px;
+    margin: 5px;
+}
+
+.bar-inner {
+    height: 10px;
+}

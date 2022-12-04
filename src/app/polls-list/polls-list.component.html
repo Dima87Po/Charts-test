@@ -1,0 +1,12 @@
+<mat-form-field appearance="fill" class="dropdown">
+    <mat-select placeholder="Select poll.." disableRipple [formControl]="pollControl">
+        <mat-option *ngFor="let item of polls" [value]="item.formId">
+            {{item.groupId}}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+
+<ng-container *ngIf="poll$ | async as poll">
+    <app-poll-item *ngFor="let question of poll.questions" [question]="question"></app-poll-item>
+</ng-container>
+
