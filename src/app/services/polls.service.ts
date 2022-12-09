@@ -16,7 +16,7 @@ export class PollsService {
     return this.http.get<IPoll[]>(`${this._url}/polls`);
   }
 
-  public getPull(id: string): Observable<IPollDetails> {
+  public getPoll(id: string): Observable<IPollDetails> {
     return this.http.get<IPollDetails>(`${this._url}/poll/${id}`);
   }
 }

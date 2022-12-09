@@ -39,7 +39,7 @@ export class PollsListComponent implements OnInit {
 
     this.poll$ = this.pollControl.valueChanges.pipe(
       distinctUntilChanged(),
-      switchMap((formId: string) => this._pollsService.getPull(formId))
+      switchMap((formId: string) => this._pollsService.getPoll(formId))
     );
   }
 
